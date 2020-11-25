@@ -1,0 +1,28 @@
+using System;
+class OperatorsDemo {
+  static void Main() {
+    Console.WriteLine(sizeof(double));  	
+    //Console.WriteLine(sizeof(string));	//Invalid
+
+    Console.WriteLine(typeof(double));  	
+
+    double d = 34.56;
+    if(d is double)
+      Console.WriteLine("Hello World");
+    else
+      Console.WriteLine("Hello How Are You");
+
+    object obj = "Hello";
+    string str = obj as string;
+    Console.WriteLine(str);
+
+    int x = 100;
+    Console.WriteLine(x == 100 ? "India" : "America");
+    Console.WriteLine(x == 200 ? "India" : "America");
+    int? a = 50;
+    Console.WriteLine(a ?? 100);
+
+    int? b = null;
+    Console.WriteLine(b ?? 100);
+  }
+}
